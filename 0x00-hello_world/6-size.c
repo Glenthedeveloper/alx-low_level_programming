@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+
 /**
  * main - print out types of data in c
  * code by Glenthedeveloper
