@@ -1,32 +1,25 @@
 #include "main.h"
 
 /**
- * rev_string - reverses a string
- * @s: string to be modified
+ * reverse_array - function with two arguments
+ * @a: int type pointer 1st argument
+ * @n: int type 2nd argument
+ * Description: reverse the content of an array of integers
+ * Return: value
  */
 
-void rev_string(char *s)
+void rev_string(char *s);
 {
-	int i;
-	int j;
-	int temp;
-	int length;
+	int i, temp;
 
-	while (s[i] != 0)
-	{
-		i++;
-	}
-
-	length = i;
 	i = 0;
-	j = length - 1;
-
-	while (i < j)
+	n--;
+	while (i < n)
 	{
-		temp = s[i];
-		s[i] = s[j];
-		s[j] = temp;
+		temp = a[i];
+		a[i] = a[n];
+		a[n] = temp;
 		i++;
-		j--;
+		n--;
 	}
 }
