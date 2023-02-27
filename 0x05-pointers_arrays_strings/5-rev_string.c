@@ -1,25 +1,35 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 
 /**
- * reverse_array - function with two arguments
- * @a: int type pointer 1st argument
- * @n: int type 2nd argument
- * Description: reverse the content of an array of integers
- * Return: value
+ * rev_string - reverses a string
+ * @s: holi
+ *
  */
 
-void rev_string(char *s);
+void rev_string(char *s)
 {
-	int i, temp;
+	int i;
+	int j;
+	int temp;
+	int length;
 
-	i = 0;
-	n--;
-	while (i < n)
+	while (s[i] != 0)
 	{
-		temp = a[i];
-		a[i] = a[n];
-		a[n] = temp;
 		i++;
-		n--;
+	}
+
+	length = i;
+	i = 0;
+	j = length - 1;
+
+	while (i < j)
+	{
+		temp = s[i];
+		s[i] = s[j];
+		s[j] = temp;
+		i++;
+		j--;
 	}
 }
