@@ -4,8 +4,8 @@
 
 /**
  * rev_string - reverses a string
- * @s: holi
- *
+ * @s: The string to be modified
+ * Return: 0
  */
 
 void rev_string(char *s)
