@@ -1,3 +1,4 @@
+#include "main.h"
 #include "holberton.h"
 
 /**
@@ -16,7 +17,7 @@ void print_number(int n)
 	if (num < 0)
 	{
 		num *= -1;
-		_putchar('-');
+		putchar('-');
 	}
 
 	/* count up */
@@ -35,12 +36,12 @@ void print_number(int n)
 	{
 		if (m == 1)
 		{
-			_putchar(num % 10 + '0');
+			putchar(num % 10 + '0');
 			num = -1;
 		}
 		else
 		{
-			_putchar((num / m % 10) + '0');
+			putchar((num / m % 10) + '0');
 			m /= 10;
 		}
 	}
