@@ -1,23 +1,15 @@
-#include "holberton.h"
 #include "main.h"
+#include <unistd.h>
 
 /**
- * puts2 - prints xters of a string
- * @str: the used string reference
- * Return: 0
+ * _putchar - writes character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned and errno is set appropriately.
  */
+int _putchar(char c)
 
-void puts2(char *str)
 {
-	int i = 0;
-
-	while (str[i] != '\0')
-	{
-		if (i % 2 == 0)
-		{
-			putchar(str[i]);
-		}
-		i++;
-	}
-	putchar('\n');
+	return (write(1, &c, 1));
 }
